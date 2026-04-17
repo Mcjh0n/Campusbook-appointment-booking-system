@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusBook | Appointments</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="site-header">
+    <div class="container nav-wrapper">
+        <a href="index.html" class="brand">
+            <img class="brand-mark" src="assets/images/logo.png" alt="CampusBook">
+            <span>CampusBook</span>
+        </a>
+
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a class="active" href="appointments.html">Appointments</a>
+        </nav>
+
+        <div class="nav-user">
+            <span class="user-chip">J</span>
+            <a class="btn btn-outline small" href="dashboard.html">Back to Dashboard</a>
+        </div>
+    </div>
+</header>
+
+<main>
+<section class="section">
+    <div class="container">
+        <div class="page-header">
+            <div>
+                <span class="eyebrow">School Appointment Management</span>
+                <h1>Student Booking Form, Schedule, Records, and Calendar</h1>
+                <p>Use this page to request school appointments and review all student booking information in one place.</p>
+            </div>
+        </div>
+
+       
+
+        <div class="appointments-layout">
+            <div class="card form-card" id="booking-form">
+                <h3>Book a School Appointment</h3>
+                <form>
+                    <div class="grid-two">
+                        <div>
+                            <label>Full Name</label>
+                            <input type="text" name="client_name" value="John Mark Fuentes">
+                        </div>
+                        <div>
+                            <label>Student ID</label>
+                            <input type="text" name="student_id" value="2024-00125">
+                        </div>
+                    </div>
+
+                    <div class="grid-two">
+                        <div>
+                            <label>School Email Address</label>
+                            <input type="email" name="email" value="johnmark.student@example.com">
+                        </div>
+                        <div>
+                            <label>Contact Number</label>
+                            <input type="text" name="contact" value="09123456789">
+                        </div>
+                    </div>
+
+                    <div class="grid-two">
+                        <div>
+                            <label>Program / Course</label>
+                            <input type="text" name="program" value="Bachelor of Science in Information Technology">
+                        </div>
+                        <div>
+                            <label>Year Level</label>
+                            <select name="year_level">
+                                <option>1st Year</option>
+                                <option>2nd Year</option>
+                                <option>3rd Year</option>
+                                <option>4th Year</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="grid-two">
+                        <div>
+                            <label>Appointment Date</label>
+                            <input type="date" name="date" value="2026-04-18">
+                        </div>
+                        <div>
+                            <label>Appointment Time</label>
+                            <input type="time" name="time" value="09:00">
+                        </div>
+                    </div>
+
+                    <div class="grid-two">
+                        <div>
+                            <label>Office Service</label>
+                            <select name="service">
+                                <option>Registrar Document Request</option>
+                                <option>Enrollment Concern</option>
+                                <option>Guidance Counseling</option>
+                                <option>Dean Consultation</option>
+                                <option>Scholarship Office Assistance</option>
+                                <option>Admission Inquiry</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label>Assigned Staff / Officer</label>
+                            <select name="personnel">
+                                <option>Ms. Reyes</option>
+                                <option>Mr. Cruz</option>
+                                <option>Ms. Gomez</option>
+                                <option>Mr. Tan</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <label>Notes / Reason for Appointment</label>
+                    <textarea name="notes" rows="4" placeholder="Enter your concern, request, or purpose of visit">Requesting a registrar appointment for document verification.</textarea>
+
+                    <a class="btn btn-primary full" href="#records">Submit Appointment Request</a>
+                </form>
+            </div>
+
+            <div class="right-stack">
+                <div class="card" id="schedule">
+                    <div class="card-title-row">
+                        <h3>Upcoming School Schedule</h3>
+                        <span class="tag">Preview</span>
+                    </div>
+                    <div class="schedule-list">
+                        <div class="schedule-item">
+                            <div>
+                                <strong>9:00 AM</strong>
+                                <p>John Mark Fuentes</p>
+                            </div>
+                            <span>Registrar Document Request</span>
+                        </div>
+                        <div class="schedule-item">
+                            <div>
+                                <strong>1:30 PM</strong>
+                                <p>Maria Santos</p>
+                            </div>
+                            <span>Scholarship Office Assistance</span>
+                        </div>
+                        <div class="schedule-item">
+                            <div>
+                                <strong>10:00 AM</strong>
+                                <p>Christian Mancao</p>
+                            </div>
+                            <span>Guidance Counseling</span>
+                        </div>
+                        <div class="schedule-item">
+                            <div>
+                                <strong>2:00 PM</strong>
+                                <p>Nestor Benitez</p>
+                            </div>
+                            <span>Dean Consultation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" id="calendar">
+                    <div class="card-title-row">
+                        <h3>School Appointment Calendar</h3>
+                        <span class="tag">April 2026</span>
+                    </div>
+                    <div class="calendar-grid">
+                        <div class="calendar-day-label">Sun</div>
+                        <div class="calendar-day-label">Mon</div>
+                        <div class="calendar-day-label">Tue</div>
+                        <div class="calendar-day-label">Wed</div>
+                        <div class="calendar-day-label">Thu</div>
+                        <div class="calendar-day-label">Fri</div>
+                        <div class="calendar-day-label">Sat</div>
+                        <div class="calendar-cell">1</div>
+                        <div class="calendar-cell">2</div>
+                        <div class="calendar-cell">3</div>
+                        <div class="calendar-cell">4</div>
+                        <div class="calendar-cell">5</div>
+                        <div class="calendar-cell">6</div>
+                        <div class="calendar-cell">7</div>
+                        <div class="calendar-cell">8</div>
+                        <div class="calendar-cell">9</div>
+                        <div class="calendar-cell">10</div>
+                        <div class="calendar-cell">11</div>
+                        <div class="calendar-cell">12</div>
+                        <div class="calendar-cell">13</div>
+                        <div class="calendar-cell">14</div>
+                        <div class="calendar-cell">15</div>
+                        <div class="calendar-cell">16</div>
+                        <div class="calendar-cell">17</div>
+                        <div class="calendar-cell has-event">18<span class="dot"></span></div>
+                        <div class="calendar-cell has-event">19<span class="dot"></span></div>
+                        <div class="calendar-cell has-event">20<span class="dot"></span></div>
+                        <div class="calendar-cell has-event">21<span class="dot"></span></div>
+                        <div class="calendar-cell">22</div>
+                        <div class="calendar-cell">23</div>
+                        <div class="calendar-cell">24</div>
+                        <div class="calendar-cell">25</div>
+                        <div class="calendar-cell">26</div>
+                        <div class="calendar-cell">27</div>
+                        <div class="calendar-cell">28</div>
+                        <div class="calendar-cell">29</div>
+                        <div class="calendar-cell">30</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card table-card" id="records">
+            <div class="card-title-row">
+                <h3>Student Appointment Records</h3>
+                <span class="tag">4 Total</span>
+            </div>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Appointment ID</th>
+                            <th>Student Name</th>
+                            <th>Student ID</th>
+                            <th>Date</th>
+                            <th>Time</th>
+                            <th>Office Service</th>
+                            <th>Assigned Personnel</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>A-001</td>
+                            <td>John Mark Fuentes</td>
+                            <td>2024-00125</td>
+                            <td>April 18, 2026</td>
+                            <td>9:00 AM</td>
+                            <td>Registrar Document Request</td>
+                            <td>Ms. Reyes</td>
+                            <td><span class="status pending">Pending</span></td>
+                        </tr>
+                        <tr>
+                            <td>A-002</td>
+                            <td>Maria Santos</td>
+                            <td>2024-00241</td>
+                            <td>April 19, 2026</td>
+                            <td>1:30 PM</td>
+                            <td>Scholarship Office Assistance</td>
+                            <td>Mr. Cruz</td>
+                            <td><span class="status confirmed">Confirmed</span></td>
+                        </tr>
+                        <tr>
+                            <td>A-003</td>
+                            <td>Kevin Dela Cruz</td>
+                            <td>2024-00316</td>
+                            <td>April 20, 2026</td>
+                            <td>10:00 AM</td>
+                            <td>Guidance Counseling</td>
+                            <td>Ms. Gomez</td>
+                            <td><span class="status completed">Completed</span></td>
+                        </tr>
+                        <tr>
+                            <td>A-004</td>
+                            <td>Angela Ramos</td>
+                            <td>2024-00482</td>
+                            <td>April 21, 2026</td>
+                            <td>2:00 PM</td>
+                            <td>Dean Consultation</td>
+                            <td>Mr. Tan</td>
+                            <td><span class="status pending">Pending</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-grid">
+        <div>
+            <h4>CampusBook</h4>
+            <p>A school appointment booking system prototype for Web Systems and Technologies 2.</p>
+        </div>
+        <div>
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="appointments.html">Appointments</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Contact Us</h4>
+            <p>Email: info@campusbook.com</p>
+        </div>
+    </div>
+    <div class="footer-bottom">Central Mindanao University • BS Information Technology</div>
+</footer>
+</body>
+</html>

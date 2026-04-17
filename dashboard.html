@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusBook | Dashboard</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="site-header">
+    <div class="container nav-wrapper">
+        <a href="index.html" class="brand">
+            <img class="brand-mark" src="assets/images/logo.png" alt="CampusBook">
+            <span>CampusBook</span>
+        </a>
+
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+            <a class="active" href="dashboard.html">Dashboard</a>
+            <a href="appointments.html">Appointments</a>
+        </nav>
+
+        <div class="nav-user">
+            <span class="user-chip">J</span>
+            <a class="btn btn-outline small" href="login.html">Logout</a>
+        </div>
+    </div>
+</header>
+
+<main>
+<section class="section dashboard-top">
+    <div class="container">
+        <div class="alert success">Welcome to the student dashboard demo view.</div>
+        
+        <div class="page-header">
+            <div>
+                <span class="eyebrow">Student Dashboard</span>
+                <h1>Welcome back, John Mark</h1>
+                <p>Here is a summary of your school appointment activity, pending requests, and campus service schedule.</p>
+                <br>
+            </div>
+            <a class="btn btn-primary" href="appointments.html">Book a School Appointment</a>
+        </div>
+
+        <div class="card-grid four stats">
+            <article class="stat-box">
+                <span>Total Requests</span>
+                <strong>4</strong>
+            </article>
+            <article class="stat-box">
+                <span>Pending Approval</span>
+                <strong>2</strong>
+            </article>
+            <article class="stat-box">
+                <span>Confirmed</span>
+                <strong>1</strong>
+            </article>
+            <article class="stat-box">
+                <span>Completed</span>
+                <strong>1</strong>
+            </article>
+        </div>
+
+        <div class="dashboard-grid">
+            <div class="card">
+                <h3>Quick Actions</h3>
+                <div class="quick-links">
+                    <a href="appointments.html#booking-form">New Request</a>
+                    <a href="appointments.html#records">Appointment List</a>
+                    <a href="appointments.html#calendar">Calendar View</a>
+                    <a href="appointments.html#schedule">Schedule</a>
+                </div>
+            </div>
+
+            <div class="card profile-card">
+                <h3>Student Profile</h3>
+                <p><strong>Name:</strong> John Mark Fuentes</p>
+                <p><strong>Student ID:</strong> 2024-00125</p>
+                <p><strong>Email:</strong> johnmark.student@example.com</p>
+                <p><strong>Contact:</strong> 09123456789</p>
+                <p><strong>Program:</strong> Bachelor of Science in Information Technology</p>
+                <p><strong>Year Level:</strong> 1st Year</p>
+            </div>
+        </div>
+
+        <div class="card table-card">
+            <div class="card-title-row">
+                <h3>Recent School Appointments</h3>
+                <a class="text-link" href="appointments.html">View All</a>
+            </div>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Student Name</th>
+                            <th>Date</th>
+                            <th>Time</th>
+                            <th>Office Service</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>A-004</td>
+                            <td>Nestor Benitez</td>
+                            <td>April 21, 2026</td>
+                            <td>2:00 PM</td>
+                            <td>Dean Consultation</td>
+                            <td><span class="status pending">Pending</span></td>
+                        </tr>
+                        <tr>
+                            <td>A-003</td>
+                            <td>Kevin Dela Cruz</td>
+                            <td>April 20, 2026</td>
+                            <td>10:00 AM</td>
+                            <td>Guidance Counseling</td>
+                            <td><span class="status completed">Completed</span></td>
+                        </tr>
+                        <tr>
+                            <td>A-002</td>
+                            <td>Maria Santos</td>
+                            <td>April 19, 2026</td>
+                            <td>1:30 PM</td>
+                            <td>Scholarship Office Assistance</td>
+                            <td><span class="status confirmed">Confirmed</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-grid">
+        <div>
+            <h4>CampusBook</h4>
+            <p>A school appointment booking system prototype for Web Systems and Technologies 2.</p>
+        </div>
+        <div>
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="appointments.html">Appointments</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Contact Us</h4>
+            <p>Email: info@campusbook.com</p>
+        </div>
+    </div>
+    <div class="footer-bottom">Central Mindanao University • BS Information Technology</div>
+</footer>
+</body>
+</html>
